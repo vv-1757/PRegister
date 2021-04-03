@@ -1,0 +1,26 @@
+# Prayogam_Register
+<html>
+<head>
+<title>Register</title>
+<link rel="shortcut icon" type="image/png" href="https://spat-cloud.github.io/data/DORAEMON 1.png">
+<meta name="theme-color" content="lightblue">
+</head>
+<style>
+
+body{
+background-color:grey;
+text-align:center;
+}
+</style>
+<body>
+<iframe name="DORAEMON" style="display:none;"></iframe>
+<form action="https://forms.gle/Yk1NpznV528bqsRv5" method="POST" target="DORAEMON">
+<input type="text" name="entry.1196234753" placeholder="NAME...."><br/>
+<input type="text" name="entry.496506396" style="display:none;">
+<input type="text" name="entry.578353811" style="display:none;">
+<input type="text" name="entry.693971930_year" style="display:none;">
+<input type="text" name="entry.693971930_month" style="display:none;">
+ <input type="text" name="entry.693971930_day" style="display:none;"> 
+<input type="submit">
+</body>
+</html>
