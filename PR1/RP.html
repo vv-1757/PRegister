@@ -37,7 +37,26 @@ border-radius:4px;
 }
 input[type=text]{
 width:auto;
-border-style:none;
+font-size:20px;
+padding:5px 10px;
+border:none;
+border-radius:4px;
+}
+input[type=text]:valid{
+width:auto;
+font-size:20px;
+padding:5px 10px;
+border:none;
+border-radius:4px;
+box-shadow:0px 0px 32px green;
+}
+input[type=text]:invalid:required{
+width:auto;
+font-size:20px;
+padding:5px 10px;
+border:none;
+border-radius:4px;
+box-shadow:0px 0px 32px red;
 }
 </style>
 <body>
