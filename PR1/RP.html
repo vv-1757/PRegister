@@ -32,8 +32,8 @@ display:none;
   }
   </script>
   <script type="application/javascript">
-  function put(json) {
-    var er = document.getElementById('Doraemon_Ip');
+  function getIP(json) {
+    var er = document.getElementById("Doraemon_Ip");
 er.value=json.ip;
   }
 </script>
@@ -54,10 +54,11 @@ er.value=json.ip;
   
 <input type="submit" value="Submit" onclick="DORAEMON()">
   </form>
-  <script type="application/javascript" src="https://api.ipify.org?format=json&callback=put"></script>
+ 
 </div>
   <div class="foot"> 
   Copyright &copy; 1969-2021 Doraemon Corporation Ltd,Inc
   </div>
+  <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </body>
 </html>
