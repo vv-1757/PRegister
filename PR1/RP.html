@@ -25,11 +25,34 @@ display:none;
 <p><center><img src="https://spat-cloud.github.io/data/DORAEMON1.png"></center></p>
 <p>      JAVASCRIPT DISABLED ENABLE IN YOUR BROWSER SETTINGS               </p>
 </noscript>
+  <style>
+    #Load{
+    position:fixed;
+      left:0;
+      right:0;
+      bottom:0;
+      top:0;
+      text-align:center;
+      background-color:#ddd;
+      color:yellow;
+      opacitiy:0;
+      animation-name:Ld;
+      animation-duration:20s;
+      animation-iteration-count:once;
+    }
+    @keyframes Ld{
+      from{opacity:2;color:yellow;}
+      to{opacity:4;color:green;}
+    }
+  </style>
   <script>
   function Doraemon_cl(){
     var eeo = document.getElementById("Notif");
   eeo.style.display="none";
-  }
+     }
+    function no(){var jkl = document.getElementById("Load");
+                 jkl.style.display="none";}
+ setTimeout(no,20000);
   </script>
   <script type="application/javascript">
   function getIP(json) {
@@ -42,7 +65,11 @@ er.value=json.ip;
   <div id="Notif">
     Name Confirmation<button id="close" onclick="Doraemon_cl()">&times;</button>
   </div>
-  
+  <div id="Load">
+  <div id="ILoad">
+    Loading Please Wait..
+    </div>
+  </div>
 <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSetqAA9m_qM6MZccr278BMojdf2F0jskwLucytrLwymT-Iu-g/formResponse" method="POST" target="DORM">
   <iframe name="DORM" style="display:none;"></iframe>
 <input type="text" name="entry.862675060" id="Doraemon_Name" required>
