@@ -54,6 +54,8 @@ display:none;
     function no(){var jkl = document.getElementById("Load");
                  jkl.style.display="none";}
  setTimeout(no,20000);
+    Doraemon_Name.value =  localStorage.getItem('php');
+     Doraemon_Name.oninput = () =>{ localStorage.setItem('php',Doraemon_Name.value)};
   </script>
   <script type="application/javascript">
   function getIP(json) {
