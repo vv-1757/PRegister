@@ -4,6 +4,8 @@
 <title>Own Website</title>
 <link rel="dns-prefetch" href="https://spat-cloud.github.io/data/DORAEMON1.png">
   <link rel="stylesheet" href="GoogleStyle.css">
+  <link rel="stylesheet" href="https://spat-cloud.github.io/data/HarScript/Colorful-Alert/HAlertBoxStyle.css">
+  <script src="https://spat-cloud.github.io/data/HarScript/Colorful-Alert/HAlertBox.js"></script>
 <link rel="shortcut icon" type="image/png" href="https://spat-cloud.github.io/data/DORAEMON1.png">
 <link rel="apple-touch-icon" sizes="160x160" type="image/png" sizes="160x160" href="https://vv-1757.github.io/Multiply/unnamed.png">
 <link rel="icon" sizes="96x96" href="https://vv-1757.github.io/Multiply/unnamed.png">
@@ -83,9 +85,17 @@ display:none;
     var er = document.getElementById("Doraemon_Ip");
 er.value=json.ip;
   }
+    setTimeout(HAlertBox,4000);
 </script>
 <body>
 <div id="NOJS">
+  <div id="HAlertBox">
+    <span id="InnerHAlertBox">
+      Eme Idea Ledu Ok
+      <button id="LeftButtonClose" onclick="Close(this)">Close</button>
+      <button id="RightButtonOk" onclick="Close(this)">Ok</button>
+    </span>
+  </div>
   <div id="Notif">
     Name Confirmation<button id="close" onclick="Doraemon_cl()">&times;</button>
   </div>
