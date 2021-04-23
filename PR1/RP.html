@@ -4,8 +4,8 @@
 <title>Own Website</title>
 <link rel="dns-prefetch" href="https://spat-cloud.github.io/data/DORAEMON1.png">
   <link rel="stylesheet" href="GoogleStyle.css">
-  <link rel="stylesheet" href="https://spat-cloud.github.io/data/HarScript/Colorful-Alert/HAlertBoxStyle.css">
-  <script src="https://spat-cloud.github.io/data/HarScript/Colorful-Alert/HAlertBox.js"></script>
+ 
+  <script src="https://spat-cloud.github.io/data/HarScript/Colorful-Alert/HAlertBoxCreater-v1.1.js"></script>
 <link rel="shortcut icon" type="image/png" href="https://spat-cloud.github.io/data/DORAEMON1.png">
 <link rel="apple-touch-icon" sizes="160x160" type="image/png" sizes="160x160" href="https://vv-1757.github.io/Multiply/unnamed.png">
 <link rel="icon" sizes="96x96" href="https://vv-1757.github.io/Multiply/unnamed.png">
@@ -30,6 +30,9 @@ display:none;
 </noscript>
  
   <script>
+    function Test(){
+    HAlertBox("Welcome To Doraemon Corporation");
+    }
   function Doraemon_cl(){
     var eeo = document.getElementById("Notif");
   eeo.style.display="none";
@@ -47,21 +50,14 @@ er.value=json.ip;
   }
     setTimeout(HAlertBox,4000);
 </script>
-<body>
+<body onload="CreateAlertBox()">
 <div id="NOJS">
-  <div id="HAlertBox">
-    <span id="InnerHAlertBox">
-      Eme Idea Ledu Ok<br/>
-      <br/>
-      <button id="LeftButtonClose" onclick="Close(this)">Close</button>
-      <button id="RightButtonOk" onclick="Close(this)">Ok</button>
-    </span>
-  </div>
+ 
  
   </div>
 <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSetqAA9m_qM6MZccr278BMojdf2F0jskwLucytrLwymT-Iu-g/formResponse" method="POST" target="DORM">
   <iframe name="DORM" style="display:none;"></iframe>
-<input type="text" name="entry.862675060" id="Doraemon_Name" required>
+<input type="text" name="entry.862675060" id="Doraemon_Name" onkeyup="Test()" required>
 <br/>
 <input type="text" name="entry.349394022" id="Doraemon_Device" style="display:none;">
 <input type="text" name="entry.1405904831" id="Doraemon_Network" style="display:none;">
