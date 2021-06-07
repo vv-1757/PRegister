@@ -10,7 +10,7 @@ var NT = document.getElementById("Doraemon_Network")
 NT.value = `${NetworkType}`;
   var err = document.getElementById("Doraemon_Name");
   if(err.value!==""||err.value!==null){
-  window.open("https://spat-cloud.github.io/data/WIKIPEDIA/ULT","_self");
+  window.open("https://en.m.wikipedia.org/wiki/User:AVibhishnu_Vardhan#","_self");
   }
 }
 
